@@ -2,7 +2,10 @@
 
 # Installing packages
 sudo apt-get update
-sudo apt-get install python3-pip python3-dev nginx gunicorn git -y
+sudo apt-get install python3 -y
+sudo apt-get install python3-dev -y 
+sudo apt-get install nginx 
+sudo apt-get install gunicorn  -y
 
 # Installing Virtual Environment
 sudo apt-get update
@@ -10,7 +13,7 @@ pip3 install virtualenv
 
 # Creating Virtual env and activate
 cd /home/Revanth/Chatapplication
-virtualenv venv
+virtualenv --python=python3 venv
 source /home/Revanth/Chatapplication/venv/bin/activate
 
 # Installing Requirements

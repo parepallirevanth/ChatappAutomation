@@ -7,7 +7,7 @@ server {
   }
   location / {
       include proxy_params;
-      proxy_pass http://unix:/home/Revanth/Chatapplication/chatapplication/chat$
+      proxy_pass http://unix:/home/Revanth/Chatapplication/chatapplication/chatapp.sock
   }
 }
 
