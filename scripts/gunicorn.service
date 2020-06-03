@@ -4,8 +4,8 @@ After=network.target
 [Service]
 User=Revanth
 Group=www-data
-WorkingDirectory=/home/Revanth/Chatapplication/chatapplication
-ExecStart=/home/Revanth/Chatapplication/chatenv/bin/gunicorn --workers 3 --bind unix:/home/Revanth/Chatapplication/chatapplication/chatapp.sock chatapp.wsgi:application
+WorkingDirectory=/home/$USER/chatappAutomation/chatapplication
+ExecStart=/home/$USER/chatappAutomation/chatenv/bin/gunicorn --workers 3 --bind unix:/home/$USER/chatappAutomation/chatapplication/chatapp.sock chatapp.wsgi:application
 
 
 [Install]

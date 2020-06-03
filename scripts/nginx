@@ -3,11 +3,11 @@ server {
   server_name 13.68.158.185;
   location = /favicon.ico { access_log off; log_not_found off; }
   location /static/ {
-      root /home/Revanth/Chatapplication/chatapplication;
+      root /home/$USER/chatappAutomation/chatapplication;
   }
   location / {
       include proxy_params;
-      proxy_pass http://unix:/home/Revanth/Chatapplication/chatapplication/chatapp.sock
+      proxy_pass http://unix:/home/$USER/chatappAutomation/chatapplication/chatapp.sock;
   }
 }
 
